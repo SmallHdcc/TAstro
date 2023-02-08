@@ -1,8 +1,8 @@
 
-title: 'My First Blog Post'  
-pubDate: 2022-07-01  
+title: '我对Astro的一些感想'  
+pubDate: 2023-02-08  
 description: 'This is the first post of my new Astro blog.'  
-author: 'Astro Learner'  
+author: 'hdcc'  
 image:  
     url: 'https://astro.build/assets/blog/astro-1-release-update/cover.jpeg'   
     alt: 'The Astro logo with the word One.'  
@@ -21,7 +21,7 @@ Welcome to my _new blog_ about learning Astro! Here, I will share my learning jo
 2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
 
 3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
-
+4. **反思自己的错误**:就比如自己使用Vue中引入组件的方式去尝试再astro 中引入js，导致网站不能顺利发布，浪费了半个小时排查错误
 ## What's next
 
 I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
