@@ -1,13 +1,14 @@
-
+---
 layout: ../../layouts/MarkdownPostLayout.astro
-标题: '我对Astro的一些感想'  
-发布日期: 2023-02-08  
-描述: '这是第一个我是用Astro创建的blog.'  
-作者: 'hdcc'  
-image:  
-    url: 'https://astro.build/assets/blog/astro-1-release-update/cover.jpeg'   
-    alt: 'The Astro logo with the word One.'  
-tags: ["astro", "blogging", "learning in public"]  
+
+title: 'My First Blog Post'
+pubDate: 2022-07-01
+description: 'This is the first post of my new Astro blog.'
+author: 'Astro Learner'
+image:
+    url: 'https://astro.build/assets/blog/astro-1-release-update/cover.jpeg' 
+    alt: 'The Astro logo with the word One.'
+tags: ["astro", "blogging", "learning in public"]
 ---
 # 我的第一篇文章
 
