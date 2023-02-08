@@ -1,4 +1,4 @@
-
+layout: ../../layouts/MarkdownPostLayout.astro
 标题: '我对Astro的一些感想'  
 发布日期: 2023-02-08  
 描述: '这是第一个我是用Astro创建的blog.'  

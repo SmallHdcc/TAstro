@@ -25,6 +25,7 @@ const textCase = "nonuppercase";
         <meta name="generator" content={Astro.generator} />
 
         <title>About Me</title>
+
         <style define:vars={{ skillColor, fontWeight, textCase }}>
             h1 {
                 color: purple;
@@ -39,15 +40,11 @@ const textCase = "nonuppercase";
     </head>
     <body>
         <!-- 这里是路由 -->
-        <BaseLayout PageTitle = {pageTitle}>
-        <p>My skills are:</p>
-        <ul>
-            {skills.map((skill) => <li class="skill">{skill}</li>)}
-        </ul>
-    </BaseLayout >
-
-        <script>
-			import "../scripts/menu.js"
-		</script>
+        <BaseLayout pageTitle={pageTitle}>
+            <p>My skills are:</p>
+            <ul>
+                {skills.map((skill) => <li class="skill">{skill}</li>)}
+            </ul>
+        </BaseLayout>
     </body>
 </html>
