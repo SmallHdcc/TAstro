@@ -1,7 +1,7 @@
 ---
-import "../styles/global.css"
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
+import "../styles/global.css";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
 import "../scripts/menu.js";
 
 const pageTitle = "About Me";
@@ -18,7 +18,6 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 const skillColor = "blue";
 const fontWeight = 700;
 const textCase = "nonuppercase";
-
 ---
 
 <html lang="en">
@@ -29,7 +28,7 @@ const textCase = "nonuppercase";
         <meta name="generator" content={Astro.generator} />
 
         <title>About Me</title>
-        <style define:vars={{skillColor, fontWeight, textCase}}>
+        <style define:vars={{ skillColor, fontWeight, textCase }}>
             h1 {
                 color: purple;
                 font-size: 4rem;
@@ -43,12 +42,15 @@ const textCase = "nonuppercase";
     </head>
     <body>
         <!-- 这里是路由 -->
-        <Navigation/>
+        <Navigation />
         <p>My skills are:</p>
         <ul>
             {skills.map((skill) => <li class="skill">{skill}</li>)}
         </ul>
-		<Footer/>
-
+        <Footer />
+        
+        <script>
+            import "../scripts/menu.js";
+        </script>
     </body>
 </html>
