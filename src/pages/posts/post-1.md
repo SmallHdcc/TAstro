@@ -1,27 +1,29 @@
 
-title: '我对Astro的一些感想'  
-pubDate: 2023-02-08  
-description: 'This is the first post of my new Astro blog.'  
-author: 'hdcc'  
+标题: '我对Astro的一些感想'  
+发布日期: 2023-02-08  
+描述: '这是第一个我是用Astro创建的blog.'  
+作者: 'hdcc'  
 image:  
     url: 'https://astro.build/assets/blog/astro-1-release-update/cover.jpeg'   
     alt: 'The Astro logo with the word One.'  
 tags: ["astro", "blogging", "learning in public"]  
 ---
-# My First Blog Post
+# 我的第一篇文章
 
-Published on: 2022-07-01
+发布在: 2022-07-01
 
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
+欢迎来到我的 关于 如何学习Astro的博客，我将会分享我的构建一个网站的学习路程。
 
-## What I've accomplished
 
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
+## 我已经完成的
+我创建了一个新的文件夹并且在网上安装了
+1. **安装Astro**: 首先, 我创建了一个新的Astro项目并建立了我的在线帐户.
 
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
+2. **制作网页**: 然后，我学会了如何通过创建新的“.astro”文件并将它们放在“src/pages/”文件夹中来制作页面。
 
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
+3. **制作博客文章**: 这是我的第一篇博文！我现在有Astro页面和Markdown帖子
+
 4. **反思自己的错误**:就比如自己使用Vue中引入组件的方式去尝试再astro 中引入js，导致网站不能顺利发布，浪费了半个小时排查错误
-## What's next
+## 接下来做什么
 
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+当然是继续学习了！
