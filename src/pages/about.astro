@@ -1,7 +1,5 @@
 ---
-import "../styles/global.css";
-import Navigation from "../components/Navigation.astro";
-import Footer from "../components/Footer.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "About Me";
 
@@ -41,12 +39,12 @@ const textCase = "nonuppercase";
     </head>
     <body>
         <!-- 这里是路由 -->
-        <Navigation />
+        <BaseLayout PageTitle = {pageTitle}>
         <p>My skills are:</p>
         <ul>
             {skills.map((skill) => <li class="skill">{skill}</li>)}
         </ul>
-        <Footer />
+    </BaseLayout >
 
         <script>
 			import "../scripts/menu.js"

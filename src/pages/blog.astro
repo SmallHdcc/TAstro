@@ -1,7 +1,6 @@
 ---
-import "../styles/global.css";
-import Navigation from "../components/Navigation.astro";
-import Footer from "../components/Footer.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+const PageTitle = "Blog";
 ---
 
 <html lang="en">
@@ -13,18 +12,17 @@ import Footer from "../components/Footer.astro";
 		<title>Astro</title>
 	</head>
 	<body>
-		<Navigation />
-
-		<h1>My Astro Learning Blog</h1>
-		<p>This is where I will post about my journey learning Astro.</p>
-		<ul>
-			<li><a href="/posts/post-1/">Post 1</a></li>
-			<li><a href="/posts/post-2/">Post 2</a></li>
-			<li><a href="/posts/post-3/">Post 3</a></li>
-		</ul>
-		<Footer />
+		<BaseLayout PageTitle = {PageTitle}>
+			<h1>My Astro Learning Blog</h1>
+			<p>This is where I will post about my journey learning Astro.</p>
+			<ul>
+				<li><a href="/posts/post-1/">Post 1</a></li>
+				<li><a href="/posts/post-2/">Post 2</a></li>
+				<li><a href="/posts/post-3/">Post 3</a></li>
+			</ul>
+		</BaseLayout>
 		<script>
-			import "../scripts/menu.js"
+			import "../scripts/menu.js";
 		</script>
 	</body>
 </html>
