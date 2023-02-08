@@ -1,5 +1,11 @@
 ---
-import BaseLayout from  "../../layouts/BaseLayout.astro";
-const pageTitle = "Tag Index"
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const tags = ["astro", "successes", "community", "setbacks", "learning in public"];
+const pageTitle = "Tag Index";
 ---
-<BaseLayout pageTitle = {pageTitle}> </BaseLayout>
+
+<BaseLayout pageTitle={pageTitle}>
+    <ul>
+        {tags.map((tag) => <li>{tag}</li>)}
+    </ul>
+</BaseLayout>
