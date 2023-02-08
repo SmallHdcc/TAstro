@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
+
 const allPosts = await Astro.glob("../pages/posts/*.md");
 const pageTitle = "Blog";
 ---
@@ -11,7 +12,7 @@ const pageTitle = "Blog";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
 		<BaseLayout pageTitle={pageTitle}>
@@ -19,11 +20,10 @@ const pageTitle = "Blog";
 			<p>This is where I will post about my journey learning Astro.</p>
 			<ul>
 				{
+					// 所以文章文件是从哪里来的呢？  没错上面定义了一个变量allPosts， 用来获取所有的
+					// 文章的文件
 					allPosts.map((post) => (
-						<BlogPost
-							url={post.url}
-							title={post.frontmatter.title}
-						/>
+					<BlogPost url={post.url} title={post.frontmatter.title}/>
 					))
 				}
 			</ul>
