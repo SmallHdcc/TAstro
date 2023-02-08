@@ -1,4 +1,7 @@
 ---
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <html lang="en">
@@ -10,13 +13,11 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
-        <a href="/posts/post-1">进入md页面</a>
+		<Navigation/>
 		<h1>这里感谢一下董作格</h1>
 		<h1>Astro</h1>
 		<p>请不要觉得是英文就得第一时间找翻译，尝试一下，尝试一下</p>
 		<h1>连接测试</h1>
+		<Footer/>
 	</body>
 </html>
