@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "Home Page"
 ---
 
 <html lang="en">
@@ -11,7 +12,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 		<title>Astro</title>
 	</head>
 	<body>
-		<BaseLayout>
+		<BaseLayout pageTitle={pageTitle}>
 			<h2>My awesome blog subtitle</h2>
 		</BaseLayout>
 		<script>
