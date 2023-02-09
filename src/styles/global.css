@@ -93,4 +93,14 @@ html {
   .dark .nav-links a {
     color: #fff;
   }
-  
+  /* 问候语按钮 */
+
+  .greetBtn {
+    position: absolute;
+    right: 0px;
+    width: 68px;
+    height: 27px;
+    color: #f6f7f8;
+  }
+
+

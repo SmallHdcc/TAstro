@@ -1,4 +1,4 @@
-import { h } from 'preact';
+
 import { useState } from 'preact/hooks';
 
 export default function Greeting({messages}) {
@@ -9,9 +9,9 @@ export default function Greeting({messages}) {
 
   return (
     <div> 
-      <h3>{greeting}! Thank you for visiting!</h3>
-      <button onClick={() => setGreeting(randomMessage())}>
-        New Greeting
+      <h3>{greeting}! 欢迎你的到来，朋友!</h3>
+      <button onClick={() => setGreeting(randomMessage())} class = "greetBtn">
+        新的问候语
       </button>
     </div>
   );
