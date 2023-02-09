@@ -83,3 +83,14 @@ html {
       }
 
   }
+  /* 主题（白 or 黑） */
+
+  .dark body {
+    background-color: #0d0950;
+    color: #fff;
+  }
+  
+  .dark .nav-links a {
+    color: #fff;
+  }
+  
